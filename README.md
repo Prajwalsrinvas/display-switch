@@ -32,34 +32,6 @@ Built with the help of `Claude 3.5 Sonnet` 🤖
 - `extended`: Switch to extended display mode
 - `monitor`: Start continuous monitoring of power status
 
-<details>
-  <summary>Sample log</summary>
-
-```log
-Thu Jul 25 12:07:39 PM IST 2024: Starting power monitoring
-Thu Jul 25 12:07:39 PM IST 2024: System is on AC power
-Thu Jul 25 12:07:39 PM IST 2024: Power state changed from  to ac
-Thu Jul 25 12:07:39 PM IST 2024: Switching to extended display
-Thu Jul 25 12:07:39 PM IST 2024: Switch to extended display completed
-Thu Jul 25 12:07:44 PM IST 2024: System is on AC power
-Thu Jul 25 12:07:49 PM IST 2024: System is on AC power
-Thu Jul 25 12:07:54 PM IST 2024: System is on AC power
-Thu Jul 25 12:07:59 PM IST 2024: System is on battery
-Thu Jul 25 12:07:59 PM IST 2024: Power state changed from ac to battery
-Thu Jul 25 12:07:59 PM IST 2024: Switching to laptop display only
-Thu Jul 25 12:08:00 PM IST 2024: Switch to laptop display completed
-Thu Jul 25 12:08:05 PM IST 2024: System is on battery
-Thu Jul 25 12:08:10 PM IST 2024: System is on battery
-Thu Jul 25 12:08:15 PM IST 2024: System is on AC power
-Thu Jul 25 12:08:15 PM IST 2024: Power state changed from battery to ac
-Thu Jul 25 12:08:15 PM IST 2024: Switching to extended display
-Thu Jul 25 12:08:17 PM IST 2024: Switch to extended display completed
-Thu Jul 25 12:08:22 PM IST 2024: System is on AC power
-Thu Jul 25 12:08:27 PM IST 2024: System is on AC power
-Thu Jul 25 12:08:32 PM IST 2024: System is on AC power
-```
-</details>
-
 ### Enabling Autostart
 
 1. Copy `display_switch.desktop` to `~/.config/autostart/`
@@ -87,6 +59,35 @@ To enable or disable logging, use the `--log` flag:
 ```bash
 ./display_switch.sh monitor --log
 ```
+
+
+<details>
+  <summary>Sample log</summary>
+
+```log
+Thu Jul 25 12:07:39 PM IST 2024: Starting power monitoring
+Thu Jul 25 12:07:39 PM IST 2024: System is on AC power
+Thu Jul 25 12:07:39 PM IST 2024: Power state changed from  to ac
+Thu Jul 25 12:07:39 PM IST 2024: Switching to extended display
+Thu Jul 25 12:07:39 PM IST 2024: Switch to extended display completed
+Thu Jul 25 12:07:44 PM IST 2024: System is on AC power
+Thu Jul 25 12:07:49 PM IST 2024: System is on AC power
+Thu Jul 25 12:07:54 PM IST 2024: System is on AC power
+Thu Jul 25 12:07:59 PM IST 2024: System is on battery
+Thu Jul 25 12:07:59 PM IST 2024: Power state changed from ac to battery
+Thu Jul 25 12:07:59 PM IST 2024: Switching to laptop display only
+Thu Jul 25 12:08:00 PM IST 2024: Switch to laptop display completed
+Thu Jul 25 12:08:05 PM IST 2024: System is on battery
+Thu Jul 25 12:08:10 PM IST 2024: System is on battery
+Thu Jul 25 12:08:15 PM IST 2024: System is on AC power
+Thu Jul 25 12:08:15 PM IST 2024: Power state changed from battery to ac
+Thu Jul 25 12:08:15 PM IST 2024: Switching to extended display
+Thu Jul 25 12:08:17 PM IST 2024: Switch to extended display completed
+Thu Jul 25 12:08:22 PM IST 2024: System is on AC power
+Thu Jul 25 12:08:27 PM IST 2024: System is on AC power
+Thu Jul 25 12:08:32 PM IST 2024: System is on AC power
+```
+</details>
 
 ## Managing the Display Switch Process
 
@@ -148,6 +149,7 @@ The `test_display_switch_performance.sh` script runs three types of tests:
 
 <details>
   <summary>Test perf script output</summary>
+  
   ```
   Starting performance tests for display_switch.sh
 ================================================
