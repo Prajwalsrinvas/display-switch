@@ -62,12 +62,12 @@ To enable or disable logging, use the `--log` flag:
 
 
 <details>
-  <summary>Sample log</summary>
+  <summary><h3>Sample log</h3></summary>
 
 ```log
 Thu Jul 25 12:07:39 PM IST 2024: Starting power monitoring
 Thu Jul 25 12:07:39 PM IST 2024: System is on AC power
-Thu Jul 25 12:07:39 PM IST 2024: Power state changed from  to ac
+Thu Jul 25 12:07:39 PM IST 2024: Power state changed from battery to ac
 Thu Jul 25 12:07:39 PM IST 2024: Switching to extended display
 Thu Jul 25 12:07:39 PM IST 2024: Switch to extended display completed
 Thu Jul 25 12:07:44 PM IST 2024: System is on AC power
@@ -145,10 +145,9 @@ The `test_display_switch_performance.sh` script runs three types of tests:
 2. Top monitoring
 3. Perf profiling
 
-### Results Analysis
 
 <details>
-  <summary>Test perf script output</summary>
+  <summary><h3>Test perf script output</h3></summary>
   
   ```
   Starting performance tests for display_switch.sh
@@ -187,6 +186,9 @@ Perf profiling complete.
 All tests completed.
   ```
 </details>
+
+
+### Results Analysis
 
 1. Basic timing test:
    - Real time: 1m0.002s (as expected, it ran for 60 seconds)
