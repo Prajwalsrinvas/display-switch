@@ -1,0 +1,17 @@
+[Desktop Entry]
+# Specify that this is an application
+Type=Application
+# Command to execute (with a 10-second delay)
+Exec=/bin/bash -c "sleep 10 && /home/prajwal/display_switch.sh monitor"
+# Don't hide the application
+Hidden=false
+# Show in the application menu
+NoDisplay=false
+# Enable autostart
+X-GNOME-Autostart-enabled=true
+# Application name in English
+Name[en_US]=Display Switch
+Name=Display Switch
+# Application description in English
+Comment[en_US]=Switch display based on power status
+Comment=Switch display based on power status
