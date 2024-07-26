@@ -1,4 +1,4 @@
-# Display Switch
+# Display Switch 🖥️ 🔄
 
 Display Switch is a bash script that automatically manages display settings based on the power status of your laptop. It switches between laptop-only and extended display modes when the power source changes between battery and AC.
 
